@@ -1,3 +1,24 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000;
+  --text-color: #fff;
+  --font-size: 15px;
+  --line-height: 1.4;
+}
+
+html,
+body {
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  font-family: "MazzardH", sans-serif;
+  color: rgb(8, 1, 1);
+}
+
 @font-face {
   font-family: "MazzardH";
   src: url("/fonts/MazzardH-Bold.otf");
@@ -59,12 +80,4 @@
   src: url("/fonts/TTOctosquares-Regular.otf");
   font-weight: 400;
   font-style: normal;
-}
-
-html,
-body {
-  font-size: 14px;
-  line-height: 1.4;
-  font-family: "MazzardH", sans-serif;
-  color: rgb(8, 1, 1);
 }
