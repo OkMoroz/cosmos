@@ -1,0 +1,27 @@
+plan.txt
+1. Налаштувати next.js
+   https://nextjs.org/docs/getting-started/installation
+
+2. Скинути стилі 
+   reset.scss
+
+3. Підключити шрифти
+   public/fonts/MazzardH-Bold.otf 
+   public/fonts/MazzardH-Medium.woff2 
+   public/fonts/MazzardH-Regular.woff2 
+   public/fonts/Move-X-Bold.otf 
+   public/fonts/NeueMachina-Bold.woff2
+   public/fonts/NeueMachina-Medium.woff2 
+   public/fonts/NeueMachina-Regular.woff2
+   public/fonts/TTOctosquares-Medium.otf 
+   public/fonts/TTOctosquares-Regular.otf
+
+4.  npm install --save classnames
+   https://www.npmjs.com/package/classnames
+
+
+
+   
+   Далі буде ...
+
+   #myFunction {} #роботкасамасебенезробить 
