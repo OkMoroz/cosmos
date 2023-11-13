@@ -11,7 +11,7 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({}) => {
   return (
     <Link href="/" className={styles.logo}>
-      <Image src={logo} alt="DUSKTOPIA" width={204} height={204} />
+      <Image src={logo} alt="DUSKTOPIA" />
     </Link>
   );
 };

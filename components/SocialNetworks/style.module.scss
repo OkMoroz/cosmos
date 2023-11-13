@@ -1,0 +1,37 @@
+.socialNetworks {
+  display: flex;
+  gap: 2.4em;
+  position: relative;
+
+  &Item {
+  }
+  &Link {
+    color: var(--text-color);
+    text-indent: -1234em;
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+
+    &:hover,
+    &:visited {
+      color: var(--text-color);
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+  &DisCord {
+    background-image: url("../../public/images/discord.svg");
+  }
+  &Twitter {
+    background-image: url("../../public/images/twitter.svg");
+    background-size: 90% auto;
+  }
+  &AntDesign {
+    background-image: url("../../public/images/antdesign.svg");
+  }
+}
