@@ -16,12 +16,16 @@ plan.txt
    public/fonts/TTOctosquares-Medium.otf 
    public/fonts/TTOctosquares-Regular.otf
 
+
+plan.txt
+
 4.  npm install --save classnames
    https://www.npmjs.com/package/classnames
 
+5. Прописати стилі для усіх елементів (*) 
+   та їхніх псевдоелементів (:before та :after),
+   а також CSS Custom Properties
 
-
-   
    Далі буде ...
 
    #myFunction {} #роботкасамасебенезробить 

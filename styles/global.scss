@@ -16,7 +16,7 @@ body {
   font-size: var(--font-size);
   line-height: var(--line-height);
   font-family: "MazzardH", sans-serif;
-  color: rgb(8, 1, 1);
+  color: var(--text-color);
 }
 
 @font-face {
