@@ -6,6 +6,7 @@ import { SocialNetworks } from "../components/SocialNetworks/SocialNetworks";
 import { Button } from "../components/Button/Button";
 // import { Navigation } from "../components/Navigation/Navigation";
 import { Title } from "../components/Title/Title";
+import classNames from "classnames";
 
 export default function Home() {
   return (
@@ -14,17 +15,23 @@ export default function Home() {
         <header className={styles.header}>
           <Logo />
           <SocialNetworks />
-          <Button onClick={() => {}}>Whitepaper</Button>
+          <Button onClick={() => {}} className="">
+            Whitepaper
+          </Button>
         </header>
         {/* <Navigation /> */}
         <div>
           <Title>FROM DUSK TO DAWN</Title>
           <ul className={styles.buttonList}>
             <li>
-              <Button onClick={() => {}}>Mint</Button>
+              <Button onClick={() => {}} className="">
+                Mint
+              </Button>
             </li>
             <li>
-              <Button onClick={() => {}}>Connect Wallet</Button>
+              <Button onClick={() => {}} className="">
+                Connect Wallet
+              </Button>
             </li>
           </ul>
         </div>
