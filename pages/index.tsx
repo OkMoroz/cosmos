@@ -4,7 +4,7 @@ import cl from "classnames";
 import { Logo } from "../components/Logo/Logo";
 import { SocialNetworks } from "../components/SocialNetworks/SocialNetworks";
 import { Button } from "../components/Button/Button";
-// import { Navigation } from "../components/Navigation/Navigation";
+import { Navigation } from "../components/Navigation/Navigation";
 import { Title } from "../components/Title/Title";
 import classNames from "classnames";
 
@@ -19,7 +19,7 @@ export default function Home() {
             Whitepaper
           </Button>
         </header>
-        {/* <Navigation /> */}
+        <Navigation />
         <div>
           <Title>FROM DUSK TO DAWN</Title>
           <ul className={styles.buttonList}>

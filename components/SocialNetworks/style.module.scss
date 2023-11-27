@@ -14,13 +14,14 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% auto;
+    transition: all 0.3s;
 
     &:hover,
     &:visited {
       color: var(--text-color);
 
       &:hover {
-        opacity: 0.7;
+        opacity: 0.8;
       }
     }
   }
