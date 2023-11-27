@@ -6,6 +6,7 @@
   gap: 3vh;
   align-items:center;
   writing-mode: vertical-rl;
+  z-index:9;
   &Link {
     color: var(--text-color);
     text-decoration: none;

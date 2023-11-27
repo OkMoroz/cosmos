@@ -36,6 +36,10 @@ export default function Home() {
           </ul>
         </div>
       </section>
+      <section className={cl(styles.section, styles.sectionEarth)}>
+        <Title size="Large">FACTIONS</Title>
+      </section>
+      <section className={cl(styles.section, styles.sectionRoadMap)}></section>
     </div>
   );
 }
