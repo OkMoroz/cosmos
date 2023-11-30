@@ -16,3 +16,33 @@
     font-size: 5rem;
   }
 }
+
+@media (min-width: 940px) and (max-width: 1260px) {
+   .title {
+    margin-bottom: 4.375rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 940px) {
+  .title {
+    margin-bottom: 4.375rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 305px) and (max-width: 720px) {
+  .title {
+        margin-bottom: 4.375rem;
+
+    &Medium {
+      font-size: 3.125rem;
+      letter-spacing: 0.6563rem;
+    }
+
+    &Large {
+      font-size: 2.5rem;
+      letter-spacing: 0.525rem;
+    }
+  }
+}

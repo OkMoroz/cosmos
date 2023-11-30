@@ -53,6 +53,51 @@
 
 .buttonList {
   display: flex;
+  flex-direction: row;
   gap: 1.2188rem;
   justify-content: center;
+}
+
+@media (min-width: 940px) and (max-width: 1260px) {
+  .section {
+    &Main,
+    &Earth {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 720px) and (max-width: 940px) {
+  .section {
+    &Main,
+    &Earth {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 305px) and (max-width: 720px) {
+  .section {
+    padding: 0.9375rem;
+    &Main,
+    &Earth {
+      flex-direction: column;
+    }
+  }
+  .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 2.1875rem;
+    left: 1.1875rem;
+    right: 1.1875rem;
+    z-index: 9;
+  }
+  .buttonList {
+    flex-direction: column-reverse;
+    gap: 1.6rem;
+    align-items: center;
+  }
 }
