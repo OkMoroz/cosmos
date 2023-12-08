@@ -1,29 +1,33 @@
-$size-height: 0.3571rem;
-$size-top: 1.8571rem;
-$size-bottom: 2.4286rem;
-$size-border: 2px;
+$size-height: 5.7136px;
+$size-top: 29.7136px;
+$size-bottom: 38.8576px;
+$size-border: .125rem;
 
 .artButton {
     border: none;
     box-shadow: none;
-    font: 1.1429rem/1rem 'NeueMachina', sans-serif;
+    font: 18.2864px/16px 'NeueMachina', sans-serif;
     background: none;
-    color: white;
-    padding: 1.4286rem 1.7857rem 1.1429rem;
+    color: var(--text-color);
+    padding: 18.8576px 38.5712px 18.2864px;
     transition: all 0.3s;
     cursor: pointer;
     position: relative;
-    height: 4rem;
-    max-width: 160px;
+    height: 64px;
+    min-width: 8.5625rem;
+    max-width: 15.1875rem;
 
     &Text {
         position: relative;
         z-index: 2;
+        font-size: 1.1875rem;
+        font-weight: 700;
+        text-align: center;
     }
 
     &:hover {
         &::after {
-            background: white;
+            background: var(--second-color);
         }
 
         .artButtonText {
@@ -31,11 +35,11 @@ $size-border: 2px;
         }
 
         .artButtonAngleLeft {
-            border-top-color: black;
+            border-top-color: var(--primary-color);
         }
 
         .artButtonAngleRight {
-            border-bottom-color: black;
+            border-bottom-color: var(--primary-color);
         }
     }
 
@@ -60,17 +64,17 @@ $size-border: 2px;
             0 calc(100% - $size-height),
 
             0 calc(100% - $size-border - $size-height),
-            calc($size-top + 1px) calc(100% - $size-border - $size-height),
-            calc($size-bottom + 1px) calc(100% - $size-border),
+            calc($size-top + .0625rem) calc(100% - $size-border - $size-height),
+            calc($size-bottom + .0625rem) calc(100% - $size-border),
             calc(100% - $size-border) calc(100% - $size-border),
             calc(100% - $size-border) $size-border,
-            calc(100% - $size-top + $size-border - 1px) calc($size-border),
-            calc(100% - $size-bottom + $size-border - 1px) calc($size-height + $size-border),
+            calc(100% - $size-top + $size-border - .0625rem) calc($size-border),
+            calc(100% - $size-bottom + $size-border - .0625rem) calc($size-height + $size-border),
             $size-border calc($size-height + $size-border),
             $size-border calc(100% - $size-border - $size-height),
             0 calc(100% - $size-border - $size-height)
         );
-        background: white;
+        background: var(--second-color);
     }
 
     &::after {
@@ -97,31 +101,31 @@ $size-border: 2px;
 
     &AngleLeft {
         position: absolute;
-        top: 10px;
-        left: 4.5px;
+        top: .625rem;
+        left: .2813rem;
         width: 0;
         height: 0;
         z-index: 1;
-        border-top: 10px solid white;
-        border-right: 10px solid transparent;
+        border-top: .625rem solid var(--second-color);
+        border-right: .625rem solid transparent;
         transition: all 0.3s;
     }
 
     &AngleRight {
         position: absolute;
-        bottom: 10px;
-        right: 4.5px;
+        bottom: .625rem;
+        right: .2813rem;
         width: 0;
         height: 0;
         z-index: 1;
-        border-bottom: 10px solid white;
-        border-left: 10px solid transparent;
+        border-bottom: .625rem solid var(--second-color);
+        border-left: .625rem solid transparent;
         transition: all 0.3s;
     }
 
     &Type {
         font-weight: bold;
-        color: black;
+        color: var(--second-text-color);
 
         .artButtonAngleLeft,
         .artButtonAngleRight {
