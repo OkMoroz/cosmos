@@ -1,0 +1,15 @@
+.diamond {
+    display: block;
+    width: 35px;
+    height: 51px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &Gradient {
+        background-image: url('../../public/images/diamond-gradient.svg');
+    }
+
+    &White {
+        background-image: url('../../public/images/diamond-white.svg');
+    }
+}

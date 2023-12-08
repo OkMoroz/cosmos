@@ -1,16 +1,58 @@
 .section {
   height: 100vh;
-  padding: 2.1875rem 2.125rem;
+  padding: 35px 34px;
   min-height: 600px;
-  
-  &Main {
-    background: url("../public/images/image1.png");
+  &Main,
+  &Earth {
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
+  }
+  &Main {
+    background: url("../public/images/image1.png");
+  }
+  &Earth {
+    background: url("../public/images/image2.jpg");
+  }
+  &Main,
+  &Earth {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  &RoadMap {
+    position: relative;
+    background: linear-gradient(to bottom, #1e202c 0%, #13151b 100%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 150px;
+      width: 100%;
+      display: block;
+      top: -150px;
+      left: 0;
+      z-index: 1;
+      background: linear-gradient(
+        to bottom,
+        rgba(30, 32, 44, 0) 0%,
+        rgba(30, 32, 44, 1) 100%
+      );
+    }
+  }
+  &Colaborations {
+    background: linear-gradient(90deg, #3d3855 9.85%, #263044 80.56%);
+  }
+  &FAQ {
+    background: linear-gradient(90deg, #3d3855 9.85%, #263044 80.56%);
+    background: url("../public/images/faq-bg.png");
+  }
+  &Team {
+    background: linear-gradient(90deg, #3d3855 9.85%, #263044 80.56%);
   }
 }
 
@@ -18,16 +60,91 @@
   display: grid;
   grid-template-columns: 1fr auto auto;
   align-items: center;
-  gap: 2rem;
+  gap: 32px;
   position: absolute;
-  top: 2.1875rem;
-  left: 2.1875rem;
-  right: 2.1875rem;
-  z-index: 2;
+  top: 35px;
+  left: 35px;
+  right: 35px;
+  z-index: 9;
+}
+
+.footer {
+  height: 174px;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  gap: 32px;
+  align-items: center;
+  padding: 30px;
 }
 
 .buttonList {
   display: flex;
-  gap: 1.2188rem;
+  flex-direction: row;
+  gap: 20px;
   justify-content: center;
+}
+
+@media (min-width: 940px) and (max-width: 1360px) {
+  .section {
+    &Main,
+    &Earth {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 720px) and (max-width: 940px) {
+  .section {
+    &Main,
+    &Earth {
+      flex-direction: column;
+    }
+  }
+  .footer {
+    height: 489px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 15px;
+  }
+}
+
+@media (min-width: 305px) and (max-width: 720px) {
+  .section {
+    padding: 15px;
+    &Main,
+    &Earth {
+      flex-direction: column;
+    }
+    &RoadMap {
+      &::before {
+        height: 80px;
+        width: 100%;
+        top: -80px;
+      }
+    }
+
+    .header {
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      position: absolute;
+      top: 35px;
+      left: 19px;
+      right: 19px;
+      z-index: 9;
+    }
+
+    .buttonList {
+      flex-direction: column-reverse;
+      gap: 25.6px;
+      align-items: center;
+    }
+  }
+  .footer {
+    height: 489px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 15px;
+  }
 }

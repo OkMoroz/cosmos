@@ -3,10 +3,10 @@ import cl from "classnames";
 
 import { Logo } from "../components/Logo/Logo";
 import { SocialNetworks } from "../components/SocialNetworks/SocialNetworks";
-import { Button } from "../components/Button/Button";
+import { ArtButton } from "../components/ArtButton/ArtButton";
 import { Navigation } from "../components/Navigation/Navigation";
 import { Title } from "../components/Title/Title";
-import classNames from "classnames";
+import { ArtMenu } from "../components/ArtMenu/ArtMenu";
 
 export default function Home() {
   return (
@@ -15,27 +15,42 @@ export default function Home() {
         <header className={styles.header}>
           <Logo />
           <SocialNetworks />
-          <Button onClick={() => {}} className="">
+          <ArtButton onClick={() => {}} className="">
             Whitepaper
-          </Button>
+          </ArtButton>
         </header>
         <Navigation />
         <div>
           <Title>FROM DUSK TO DAWN</Title>
           <ul className={styles.buttonList}>
             <li>
-              <Button onClick={() => {}} className="">
+              <ArtButton onClick={() => {}} className="">
                 Mint
-              </Button>
+              </ArtButton>
             </li>
             <li>
-              <Button onClick={() => {}} className="">
+              <ArtButton onClick={() => {}} className="">
                 Connect Wallet
-              </Button>
+              </ArtButton>
             </li>
           </ul>
         </div>
       </section>
+      <section className={cl(styles.section, styles.sectionEarth)}>
+        <Title size="Large">FACTIONS</Title>
+        <ArtMenu />
+      </section>
+      <section className={cl(styles.section, styles.sectionRoadMap)}></section>
+      <section
+        className={cl(styles.section, styles.sectionColaborations)}
+      ></section>
+      <section className={cl(styles.section, styles.sectionFAQ)}></section>
+      <section className={cl(styles.section, styles.sectionTeam)}></section>
+      <footer className={styles.footer}>
+        <Logo />
+        <SocialNetworks />
+        <p>Copyright © 2023. All rights reserved.</p>
+      </footer>
     </div>
   );
 }

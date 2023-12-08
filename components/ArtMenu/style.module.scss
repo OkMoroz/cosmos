@@ -1,0 +1,131 @@
+.artMenu {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 45px;
+  position: relative;
+  margin-left: 160px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 19px;
+    top: 2px;
+    width: 3px;
+    bottom: 2px;
+    background: var(--second-color);
+    z-index: 0;
+  }
+
+  &Card {
+    margin-top: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  &Item {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    font-size: 25.1424px;
+    font-family: "TTOctosquares", sans-serif;
+    padding-right: 60.8px;
+    position: relative;
+    z-index: 1;
+
+    &:visited,
+    &:hover {
+      color: var(--text-color);
+    }
+
+    .artMenuDecorator {
+      background-image: url("../../public/images/white_right_border.png");
+    }
+
+    &:hover {
+      .artMenuDecorator {
+        background-image: url("../../public/images/color_right_border.png");
+      }
+    }
+
+    &:nth-child(odd) {
+      .artMenuDecorator {
+        background-image: url("../../public/images/white_left_border.png");
+      }
+
+      &:hover {
+        .artMenuDecorator {
+          background-image: url("../../public/images/color_left_border.png");
+        }
+      }
+    }
+
+    &:last-child {
+      .artMenuDecorator {
+        top: auto;
+        bottom: -4px;
+      }
+    }
+  }
+
+  &Decorator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 48px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+
+  &ItemActive {
+    .artMenuDecorator {
+      background-image: url("../../public/images/color_right_border.png");
+
+      &:nth-child(odd) {
+        background-image: url("../../public/images/color_right_border.png");
+      }
+    }
+    .artMenuTitle {
+      text-transform: uppercase;
+    }
+
+    .artMenuCard {
+      opacity: 1;
+      height: 214px;
+      margin-top: 19.2px;
+    }
+  }
+}
+
+.cardMore {
+  position: relative;
+  padding-left: 40px;
+
+  &Button {
+    left: 0;
+    top: 10%;
+    position: absolute;
+  }
+
+  &Image {
+    display: block;
+  }
+}
+
+@media (min-width: 305px) and (max-width: 720px) {
+  .artMenu {
+    gap: 76px;
+    margin-left: 26px;
+  }
+  .cardMore {
+    &Button {
+      left: 20%;
+      top: 70%;
+    }
+  }
+}

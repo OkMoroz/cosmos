@@ -1,14 +1,14 @@
 .logo {
   text-decoration: none;
   display: inline-block;
-  width: 11rem;
-  height: 8rem;
+  width: 176px;
+  height: 128px;
   position: relative;
   transition: opacity 0.3s;
 
   &:hover,
   &:visited {
-    color: white;
+    color: var(--text-color);
   }
   &:hover {
     opacity: 0.7;
