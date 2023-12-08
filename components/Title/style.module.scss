@@ -1,9 +1,8 @@
 .title {
-  font-size: 66px;
   font-weight: 400;
   font-family: "TTOctosquares";
   line-height: 1.1;
-  letter-spacing: 24.0896px;
+  letter-spacing: 24px;
   text-transform: uppercase;
 
   &Medium {
@@ -14,39 +13,38 @@
 
   &Large {
     font-size: 80px;
-    letter-spacing: 1.825rem;
+    letter-spacing: 29.2px;
   }
 }
 
-@media (min-width: 58.75rem) and (max-width: 78.75rem) {
+@media (min-width: 940px) and (max-width: 1360px) {
   .title {
     margin-bottom: 70px;
     font-size: 56px;
     &Large {
-      font-size: 40px;
-      margin: 9.375rem 0 5.25rem 0;
-      letter-spacing: 8.4px;
+      margin: 150px 0 84px 0;
     }
   }
 }
 
-@media (min-width: 45rem) and (max-width: 58.75rem) {
+@media (min-width: 720px) and (max-width: 940px) {
   .title {
     margin-bottom: 70px;
     font-size: 40px;
   }
 }
 
-@media (min-width: 19.0625rem) and (max-width: 45rem) {
+@media (min-width: 305px) and (max-width: 720px) {
   .title {
     margin-bottom: 70px;
 
     &Medium {
-      font-size: 50px;
-      letter-spacing: 10.5008px;
+      font-size: 40px;
+      letter-spacing: 10px;
     }
 
     &Large {
+      font-size: 40px;
       font-size: 40px;
       letter-spacing: 8.4px;
     }

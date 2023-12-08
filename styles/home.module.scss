@@ -1,7 +1,16 @@
 .section {
   height: 100vh;
-  padding: 2.1875rem 2.125rem;
+  padding: 35px 2.125rem;
   min-height: 600px;
+  &Main,
+  &Earth {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
+  }
   &Main {
     background: url("../public/images/image1.png");
   }

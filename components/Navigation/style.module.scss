@@ -1,8 +1,8 @@
 .navigation {
-  font: bold 16px "Neue Machina", sans-serif;
+  font: bold 1rem "Neue Machina", sans-serif;
   display: flex;
   position: fixed;
-  left: 1rem;
+  left: 16px;
   gap: 3vh;
   align-items:center;
   writing-mode: vertical-rl;
@@ -12,7 +12,7 @@
     text-decoration: none;
     opacity: 0.7;
     transition: all 0.3s;
-    padding: 0 16px;
+    padding: 0 1rem;
 
     &:hover,
     &:visited {
@@ -26,8 +26,8 @@
 
   &Star {
     display: block;
-    width: 1.345rem;
-    height: 1.345rem;
+    width: 22px;
+    height: 22px;
     transform: rotate(90deg);
     background: url("../../public/images/star.svg") no-repeat center center;
   }
