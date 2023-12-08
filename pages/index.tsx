@@ -41,6 +41,16 @@ export default function Home() {
         <ArtMenu />
       </section>
       <section className={cl(styles.section, styles.sectionRoadMap)}></section>
+      <section
+        className={cl(styles.section, styles.sectionColaborations)}
+      ></section>
+      <section className={cl(styles.section, styles.sectionFAQ)}></section>
+      <section className={cl(styles.section, styles.sectionTeam)}></section>
+      <footer className={styles.footer}>
+        <Logo />
+        <SocialNetworks />
+        <p>Copyright © 2023. All rights reserved.</p>
+      </footer>
     </div>
   );
 }

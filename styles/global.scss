@@ -19,6 +19,9 @@ body {
   line-height: var(--line-height);
   font-family: "MazzardH", sans-serif;
   color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {
