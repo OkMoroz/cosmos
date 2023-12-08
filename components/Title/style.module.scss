@@ -19,24 +19,25 @@
 
 @media (min-width: 940px) and (max-width: 1360px) {
   .title {
-    margin-bottom: 70px;
     font-size: 56px;
     &Large {
-      margin: 150px 0 84px 0;
+      margin: 150px 0 50px 0;
     }
   }
 }
 
 @media (min-width: 720px) and (max-width: 940px) {
   .title {
-    margin-bottom: 70px;
-    font-size: 40px;
+    font-size: 56px;
+    &Large {
+      margin: 150px 0 50px 0;
+    }
   }
 }
 
 @media (min-width: 305px) and (max-width: 720px) {
   .title {
-    margin-bottom: 70px;
+    margin-bottom: 82px;
 
     &Medium {
       font-size: 40px;
@@ -44,7 +45,6 @@
     }
 
     &Large {
-      font-size: 40px;
       font-size: 40px;
       letter-spacing: 8.4px;
     }

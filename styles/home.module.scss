@@ -1,15 +1,13 @@
 .section {
   height: 100vh;
-  padding: 35px 2.125rem;
-  min-height: 600px;
+  padding: 35px 34px;
+  min-height: 37.5rem;
   &Main,
   &Earth {
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
   }
   &Main {
     background: url("../public/images/image1.png");
@@ -23,8 +21,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 6.25rem;
-    padding-bottom: 6.25rem;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
   &RoadMap {
     position: relative;
@@ -33,10 +31,10 @@
     &::before {
       content: "";
       position: absolute;
-      height: 9.375rem;
+      height: 150px;
       width: 100%;
       display: block;
-      top: -9.375rem;
+      top: -150px;
       left: 0;
       z-index: 1;
       background: linear-gradient(
@@ -52,22 +50,22 @@
   display: grid;
   grid-template-columns: 1fr auto auto;
   align-items: center;
-  gap: 2rem;
+  gap: 32px;
   position: absolute;
-  top: 2.1875rem;
-  left: 2.1875rem;
-  right: 2.1875rem;
+  top: 35px;
+  left: 35px;
+  right: 35px;
   z-index: 9;
 }
 
 .buttonList {
   display: flex;
   flex-direction: row;
-  gap: 1.2188rem;
+  gap: 20px;
   justify-content: center;
 }
 
-@media (min-width: 940px) and (max-width: 1260px) {
+@media (min-width: 940px) and (max-width: 1360px) {
   .section {
     &Main,
     &Earth {
@@ -87,26 +85,33 @@
 
 @media (min-width: 305px) and (max-width: 720px) {
   .section {
-    padding: 0.9375rem;
+    padding: 15px;
     &Main,
     &Earth {
       flex-direction: column;
     }
-  }
-  .header {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    gap: 1rem;
-    position: absolute;
-    top: 2.1875rem;
-    left: 1.1875rem;
-    right: 1.1875rem;
-    z-index: 9;
-  }
-  .buttonList {
-    flex-direction: column-reverse;
-    gap: 1.6rem;
-    align-items: center;
+    &RoadMap {
+      &::before {
+        height: 80px;
+        width: 100%;
+        top: -80px;
+      }
+    }
+    .header {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 16px;
+      position: absolute;
+      top: 35px;
+      left: 19px;
+      right: 19px;
+      z-index: 9;
+    }
+    .buttonList {
+      flex-direction: column-reverse;
+      gap: 25.6px;
+      align-items: center;
+    }
   }
 }
